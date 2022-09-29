@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA_PAM_TUGAS1_120140017</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+    <script languange="javascript" type="text/javascript">
+        var nama=["Agus", "Zilong", "Wahyu", "Firman", "Dian", "Sabilla", "Ananda", "Vicktor", "Nick", "Made"];
+        var nim=[123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133];
+        var nilai=[40,76,66,82,78,90,98,75,35,48];
+        var hurufmutu="";
+    </script>
+</head>
+
+<body>
+    <style>
+        body {
+            width: 280px;
+            height: 653px;
+        }
+    </style>
+    
+    <table>
+        <tr>
+            <td>No</td>
+            <td>Nama</td>
+            <td>NIM</td>
+            <td>Nilai</td>
+            <td>Huruf Mutu</td>
+        </tr>
+    <script languange="javascript" type="text/javascript">
+        for(arrayLoc = 0; arrayLoc < 10; arrayLoc++) {
+            if( nilai[arrayLoc] >= 80 ) {
+                hurufmutu = "A";
+            } else if( nilai[arrayLoc] >= 70 ) {
+                hurufmutu="AB";
+            } else if( nilai[arrayLoc] >= 60 ) {
+                hurufmutu="B";
+            } else if( nilai[arrayLoc] >= 50 ) {
+                hurufmutu="BC";
+            } else if( nilai[arrayLoc] >= 40 ) {
+                hurufmutu="C";
+            } else if( nilai[arrayLoc] >= 30 ) {
+                hurufmutu="D";
+            } else {
+                hurufmutu="E";
+            }
+            document.write("<tr>");
+                document.write("<td>", arrayLoc + 1, "</td>");
+                document.write("<td>", nama[arrayLoc] , "</td>");
+                document.write("<td>", nim[arrayLoc], "</td>");
+                document.write("<td>", nilai[arrayLoc], "</td>");
+                document.write("<td>", hurufmutu, "</td>")
+            document.write("</tr>");
+        }
+    </script>
+    </table>
+</body>
+</html>
